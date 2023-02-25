@@ -1,11 +1,10 @@
 import React from "react";
-
-import Vector from '../images/Vector.png';
+import vector from '../images/vector.png';
 
 const Header = () => {
   return (
     <header className="header">
-        <img className="header__logo" src={Vector} alt="Vector"/>
+      <img className="header__logo" src={vector} alt="Vector" />
     </header>
   );
 };

@@ -1,15 +1,14 @@
 import React from "react";
 
-const Card = ({card, onCardClick}) => {
+const Card = ({ card, onCardClick }) => {
     function handleClick() {
         onCardClick(card);
-      }  
+    }
     return (
-        <div className="item" key={card._id}>
-            <img className="item__image" 
-                src={card.link} 
+        <div className="item">
+            <img className="item__image"
+                src={card.link}
                 alt={card.name}
-                style={{ backgroundImage: `url(${card.link})` }}
                 onClick={handleClick} />
             <button className="item__delete" type="button" aria-label="Кнопка Удалить"></button>
             <div className="item__elements">
