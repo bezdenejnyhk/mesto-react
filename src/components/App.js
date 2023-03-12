@@ -57,6 +57,7 @@ function App() {
         setIsEditProfilePopupOpen(false);
         setIsAddPlacePopupOpen(false);
         setSelectedCard({});
+        setIsPopupWithConfirmation(false);
     };
 
     // Обработчик лайка
@@ -159,9 +160,9 @@ function App() {
                 />
                 <PopupWithConfirmation
                     isOpen={isPopupWithConfirmation}
+                    card={removedCardId}
                     onClose={closeAllPopups}
                     onConfirm={handleCardDelete}
-                    card={removedCardId}
                 />
             </div>
         </CurrentUserContext.Provider>
